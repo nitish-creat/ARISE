@@ -31,7 +31,7 @@ function Footer() {
   };
 
   return (
-    <div style={blueaura}
+    <div
     className="h-screen w-full flex justify-center items-center bg-[#020521] text-white">
       <StarsBackground />
       <form
