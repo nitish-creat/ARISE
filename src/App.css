@@ -1,9 +1,8 @@
-/* Hide vertical scrollbar unless necessary */
+
 body {
   overflow-y: hidden;
 }
 
-/* OR only if you want to prevent accidental overflows from elements */
 html, body {
   margin: 0;
   padding: 0;

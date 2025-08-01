@@ -30,8 +30,8 @@ function App() {
         <Benifits />
         <div className="relative w-full bg-[#020521] overflow-hidden">
           <StarsBackground />
-
-          <div className="relative z-10 flex justify-evenly items-center py-10">
+         
+          <div className="relative z-10 flex flex-col md:flex-row justify-evenly items-center py-10">
             <Footer />
             <Form />
           </div>

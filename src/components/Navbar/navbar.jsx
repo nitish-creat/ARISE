@@ -19,7 +19,7 @@ function Navbar() {
                     <ul className='hidden md:flex flex-row items-center gap-4 lg:gap-8 text-lg'>
                         <li>
                             <a
-                                href="#"
+                                href="#xyz"
                                 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] 
              hover:from-[#3b82f6] hover:via-[#6366f1] hover:to-[#8b5cf6] 
              transition duration-300 ease-in-out font-semibold text-lg"
