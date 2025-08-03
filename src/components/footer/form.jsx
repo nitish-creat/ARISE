@@ -9,21 +9,18 @@ export default function Form(){
   const isMismatch = confirmPassword && password !== confirmPassword;
 
   return (
-    <div  data-aos='fade' data-aos-delay='400' data-aos-duration='1000' className="flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10">
-      {/* === Card Start === */}
+    <div  data-aos='fade' data-aos-delay='400' data-aos-duration='1000' className=" flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10">
       <div className="relative flex items-center justify-center my-10" id="xyz">
-        <div className="absolute w-[300px] h-[420px] bg-white rounded-full blur-3xl opacity-30 z-0"></div>
 
-        <div className="relative z-10 w-[350px] md:w-[400px] h-[400px] bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl p-6 flex flex-col justify-between">
+        <div className="relative z-10 w-[350px] md:w-[400px] h-[400px] bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl p-6 flex flex-col justify-between ">
           <div>
-            <h2 className="text-2xl font-bold text-center text-purple-300 mb-4">
+            <h2 className="text-2xl font-bold text-center text-purple-400 mb-4">
               Welcome to <span className="text-blue-400">ARISE</span>
             </h2>
             <form
               className="space-y-3"
               onSubmit={(e) => {
                 e.preventDefault();
-                // Add signup logic here
               }}
             >
               <input
