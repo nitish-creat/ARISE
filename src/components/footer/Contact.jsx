@@ -34,7 +34,7 @@ export default function Contact() {
       </div>
 
       {/* Cards Section */}
-      <div className="flex flex-row gap-4 overflow-x-auto md:overflow-visible px-2 py-10 md:py-16 scroll-smooth snap-x mb-70 h-30">
+      <div className="flex flex-row gap-4 overflow-x-auto md:overflow-visible px-2 py-10 md:py-16 scroll-smooth snap-x mb-70 md:h-30">
         {/* === Email Card === */}
         <div
           onClick={() => setActiveCard("email")}
