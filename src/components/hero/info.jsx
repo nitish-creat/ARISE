@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaAngleDoubleDown } from "react-icons/fa";
 import StarsBackground from '../StarsBackground';
-import PixelCard from '../PixelCard';
+
 import { motion } from "framer-motion";
 import picone from '../../assets/picone.jpg';
 import pictwo from '../../assets/pictwo.jpg';
@@ -65,7 +65,7 @@ function Info() {
                         data-aos="fade-up"
                         data-aos-delay="200"
                         data-aos-duration="1000"
-                        className="h-100 w-100 md:w-[200px] lg:w-[450px] rounded-3xl flex flex-col justify-center items-center p-5 text-center"
+                        className="h-100 w-100 md:w-[200px] lg:w-[450px] rounded-3xl flex flex-col justify-center items-center p-5 text-center mt-10"
                     >
                         <img
                             src={pictwo}

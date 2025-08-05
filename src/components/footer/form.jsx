@@ -9,8 +9,8 @@ export default function Form(){
   const isMismatch = confirmPassword && password !== confirmPassword;
 
   return (
-    <div  data-aos='fade' data-aos-delay='400' data-aos-duration='1000' className=" flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10">
-      <div className="relative flex items-center justify-center my-10" id="xyz">
+    <div  data-aos='fade' data-aos-delay='400' data-aos-duration='1000' className=" flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10" id="form">
+      <div className="relative flex items-center justify-center my-10" >
 
         <div className="relative z-10 w-[350px] md:w-[400px] h-[400px] bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-xl p-6 flex flex-col justify-between ">
           <div>

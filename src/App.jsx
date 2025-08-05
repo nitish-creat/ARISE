@@ -10,7 +10,9 @@ import "aos/dist/aos.css";
 import "./App.css";
 import StarsBackground from "./components/StarsBackground";
 import Contact from "./components/footer/Contact";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import Learn from  "./components/Learn/Learn";
+import { Routes,Route } from "react-router-dom";
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -40,6 +42,10 @@ function App() {
         </div>
 
       </div>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/learn" element={<Learn />} /> 
+      </Routes>
     </>
   );
 }

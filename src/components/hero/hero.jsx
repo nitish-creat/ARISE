@@ -19,13 +19,13 @@ function Hero() {
   return (
     <>
       
-      <div className="bg-[#020521] text-white min-h-screen relative flex items-center justify-center overflow-y-hidden">
+      <div className="bg-[#020521] text-white min-h-screen relative flex items-center justify-center overflow-y-hidden" >
       <StarsBackground />
 
         <div className="px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20 grid md:grid-cols-2 place-items-center w-full pb-20 overflow-hidden">
           {/* Text section */}
           <div
-            className="relative z-10 flex flex-col items-center justify-center px-4 py-20 md:py-32 lg:py-40 text-center]"
+            className="relative z-10 flex flex-col items-center justify-center px-4 py-5 md:py-32 lg:py-40 text-center]"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1000"
@@ -36,8 +36,8 @@ function Hero() {
             {/* Actual Text Content */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_0_25px_rgba(0,123,255,0.6)] z-10">
               Welcome to <span className="bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] bg-clip-text text-transparent animate-pulse lg:text-6xl">
-  ARISE
-</span>
+            ARISE
+        </span>
 
             </h1>
             <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-xl z-10">
@@ -57,13 +57,14 @@ function Hero() {
 
             {/* Call-to-action (Optional) */}
             <div className="mt-8 z-10">
-              <button className="px-6 py-2 border rounded-full text-white 
+             <a href="#form"> <button className="px-6 py-2 border rounded-full text-white 
                                 drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] 
                                 hover:scale-105 transition-transform duration-300 
                                 bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] 
                                 border-transparent active:scale-90 active:bg-blue-400/10">
                 Start Your Journey
               </button>
+              </a>
             </div>
           </div>
 
