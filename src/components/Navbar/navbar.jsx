@@ -41,7 +41,7 @@ function Navbar() {
           className="flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20"
         >
           <h1 className='font-extrabold flex justify-center items-center gap-2 bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] bg-clip-text text-transparent animate-pulse text-4xl lg:text-6xl cursor-pointer'>
-            Arise
+            ARISE
           </h1>
 
           <ul className='hidden md:flex flex-row items-center gap-4 lg:gap-8 text-lg'>
