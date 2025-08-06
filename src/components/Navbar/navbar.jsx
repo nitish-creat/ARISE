@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import StarsBackground from '../StarsBackground';
 import { HiMiniSquares2X2 } from "react-icons/hi2";
 import ResMenu from './resmenu';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 function Navbar() {
   const [showmenu, setshowmenu] = React.useState(false);
   const menuToggleRef = useRef(null);
@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className='bg-[#020521] text-white py-6 relative z-50' id='home'>
+      <nav className='bg-[#020521] text-white py-6 z-50' id='home'>
         <StarsBackground />
         <div
           data-aos='fade'
@@ -54,12 +54,12 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <NavLink
-                to="/learn"
+              <Link
+                to="/Arise/learn"
                 className="text-transparent bg-clip-text bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] hover:from-[#3b82f6] hover:via-[#6366f1] hover:to-[#8b5cf6] transition duration-300 ease-in-out font-semibold text-lg"
               >
                 LEARN MORE
-              </NavLink>
+              </Link>
             </li>
             <li>
               <a
@@ -90,7 +90,7 @@ function Navbar() {
               href="#"
               className='inline-block px-3 py-2 hover:text-yellow-400 transition-colors duration-200'
             >
-              <button className="px-6 py-2 border border-white rounded-full text-white hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] hover:scale-105 transition-transform duration-300 hover:bg-gradient-to-r hover:from-[#4f46e5] hover:via-[#3b82f6] hover:to-[#9333ea] hover:border-transparent active:scale-90 active:bg-blue-400/10">
+              <button className="px-6 py-2  rounded-full text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] scale-105 transition-transform duration-300 bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea]  active:scale-80 active:bg-blue-400/10">
                 login
               </button>
             </a>

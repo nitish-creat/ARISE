@@ -19,13 +19,13 @@ function Hero() {
   return (
     <>
       
-      <div className="bg-[#020521] text-white min-h-screen relative flex items-center justify-center overflow-y-hidden" >
+      <div className="bg-[#020521] text-white h-150 relative flex items-center justify-center overflow-y-hidden " >
       <StarsBackground />
 
-        <div className="px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20 grid md:grid-cols-2 place-items-center w-full pb-20 overflow-hidden">
+        <div className="px-4 sm:px-8 md:px-10 lg:px-16 xl:px-20 grid md:grid-cols-2 place-items-center w-full pb-20 overflow-hidden py-50">
           {/* Text section */}
           <div
-            className="relative z-10 flex flex-col items-center justify-center px-4 py-5 md:py-32 lg:py-40 text-center]"
+            className="relative z-10 flex flex-col items-center justify-center px-4 py-1 lg:py-40 text-center]"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1000"

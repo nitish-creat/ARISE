@@ -10,8 +10,10 @@ import "aos/dist/aos.css";
 import "./App.css";
 import StarsBackground from "./components/StarsBackground";
 import Contact from "./components/footer/Contact";
-import Learn from  "./components/Learn/Learn";
-import { Routes,Route } from "react-router-dom";
+import Learn from "./components/Learn/Learn";
+import { Routes, Route, createBrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -24,28 +26,34 @@ function App() {
   }, []);
   return (
     <>
-
-      <Navbar />
-      <Hero />
-      <Info />
-      <Benifits />
-      <div className="relative w-full bg-[#020521] overflow-hidden">
-        <StarsBackground />
-        
-        <div className="relative z-10 flex flex-col md:flex-row justify-evenly items-center py-10">
-          <Footer />
-          <Form />
-        </div>
-        <div className="relative w-full bg-[#020521] overflow-hidden">
-          <StarsBackground />
-          <div><Contact /></div>
-        </div>
-
-      </div>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/learn" element={<Learn />} /> 
-      </Routes>
+      
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Hero />
+                <Info />
+                <Benifits />
+                <div className="relative w-full bg-[#020521] overflow-hidden">
+                  <StarsBackground />
+                  <div className="relative z-10 flex flex-col md:flex-row justify-evenly items-center py-10">
+                    <Footer />
+                    <Form />
+                  </div>
+                  <div className="relative w-full bg-[#020521] overflow-hidden">
+                    <StarsBackground />
+                     <div><Contact/></div>
+                  </div>
+                </div>
+                
+              </>
+            }
+          ></Route>
+          <Route path="/Arise/learn" element={<Learn />}></Route>
+        </Routes>
+      
     </>
   );
 }
