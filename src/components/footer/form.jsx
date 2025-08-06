@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function Form(){
     const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -85,9 +87,11 @@ export default function Form(){
 
           <p className="text-sm text-center text-gray-400 mt-2">
             Already a member?{" "}
-            <span className="text-blue-400 hover:underline cursor-pointer">
+            <Link
+                to="/Arise/login"
+             className="text-blue-400 hover:underline cursor-pointer">
               Log in
-            </span>
+            </Link>
           </p>
         </div>
       </div>
@@ -95,12 +99,4 @@ export default function Form(){
 
         
     )
-       
-
-
-
-
-    
-
-  
 }

@@ -12,9 +12,8 @@ import StarsBackground from "./components/StarsBackground";
 import Contact from "./components/footer/Contact";
 import Learn from "./components/Learn/Learn";
 import { Routes, Route, createBrowserRouter } from "react-router-dom";
-import { RouterProvider } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
-
+import Login from "./components/pages/login";
+import Combine from "./components/footer/combine";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -36,22 +35,14 @@ function App() {
                 <Hero />
                 <Info />
                 <Benifits />
-                <div className="relative w-full bg-[#020521] overflow-hidden">
-                  <StarsBackground />
-                  <div className="relative z-10 flex flex-col md:flex-row justify-evenly items-center py-10">
-                    <Footer />
-                    <Form />
-                  </div>
-                  <div className="relative w-full bg-[#020521] overflow-hidden">
-                    <StarsBackground />
-                     <div><Contact/></div>
-                  </div>
-                </div>
-                
+                <Combine/>
+  
               </>
             }
           ></Route>
           <Route path="/Arise/learn" element={<Learn />}></Route>
+          <Route path="/Arise/login" element={<Login />}></Route>
+          <Route path="/Arise/combine" element={<Combine />}></Route>
         </Routes>
       
     </>

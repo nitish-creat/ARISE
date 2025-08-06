@@ -70,14 +70,14 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/Arise/login"
                 className='inline-block px-3 py-2 hover:text-yellow-400 transition-colors duration-200'
               >
                 <button className="px-6 py-2 border border-white rounded-full text-white hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] hover:scale-105 transition-transform duration-300 hover:bg-gradient-to-r hover:from-[#4f46e5] hover:via-[#3b82f6] hover:to-[#9333ea] hover:border-transparent active:scale-90 active:bg-blue-400/10">
                   login
                 </button>
-              </a>
+              </Link>
             </li>
           </ul>
 
