@@ -14,6 +14,7 @@ import Learn from "./components/Learn/Learn";
 import { Routes, Route, createBrowserRouter } from "react-router-dom";
 import Login from "./components/pages/login";
 import Combine from "./components/footer/combine";
+import Dashboard from "./components/Dashboard/Dashboard";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -43,6 +44,7 @@ function App() {
           <Route path="/Arise/learn" element={<Learn />}></Route>
           <Route path="/Arise/login" element={<Login />}></Route>
           <Route path="/Arise/combine" element={<Combine />}></Route>
+          <Route path="/Arise/Dashboard" element={<Dashboard />}></Route>
         </Routes>
       
     </>
