@@ -27,28 +27,25 @@ function App() {
   }, []);
   return (
     <>
-      
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar />
-                <Hero />
-                <Info />
-                <Benifits />
-                <Combine/>
-  
-              </>
-            }
-          ></Route>
-          <Route path="/Arise/learn" element={<Learn />}></Route>
-          <Route path="/Arise/login" element={<Login />}></Route>
-          <Route path="/Arise/combine" element={<Combine />}></Route>
-          <Route path="/Arise/Dashboard" element={<Dashboard />}></Route>
-          <Route path="/add" element={<AddTodo/>}></Route>
-        </Routes>
-      
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <Info />
+              <Benifits />
+              <Combine />
+            </>
+          }
+        ></Route>
+        <Route path="/Arise/learn" element={<Learn />}></Route>
+        <Route path="/Arise/login" element={<Login />}></Route>
+        <Route path="/Arise/combine" element={<Combine />}></Route>
+        <Route path="/Arise/Dashboard" element={<Dashboard />}></Route>
+        <Route path="/add" element={<AddTodo />}></Route>
+      </Routes>
     </>
   );
 }

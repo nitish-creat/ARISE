@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Eye, EyeOff } from 'lucide-react';
-import StarsBackground from '../StarsBackground';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Eye, EyeOff } from "lucide-react";
+import StarsBackground from "../StarsBackground";
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -16,7 +16,11 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username.trim() === "" || email.trim() === "" || password.trim() === "") {
+    if (
+      username.trim() === "" ||
+      email.trim() === "" ||
+      password.trim() === ""
+    ) {
       setError("All fields are required!");
       return;
     }
@@ -31,11 +35,18 @@ function SignUp() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#020521] px-4" id='form'>
+    <div
+      className="min-h-screen flex items-center justify-center bg-[#020521] px-4"
+      id="form"
+    >
       <StarsBackground />
-      <div className="w-full max-w-md bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-8 space-y-6 border border-white/10" >
+      <div className="w-full max-w-md bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-8 space-y-6 border border-white/10">
         <h2 className="text-3xl font-bold text-center text-white animate-pulse">
-          Create an <span className="bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] bg-clip-text text-transparent">ARISE</span> Account
+          Create an{" "}
+          <span className="bg-gradient-to-r from-[#4f46e5] via-[#3b82f6] to-[#9333ea] bg-clip-text text-transparent">
+            ARISE
+          </span>{" "}
+          Account
         </h2>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -69,7 +80,7 @@ function SignUp() {
           <div className="relative">
             <label className="block text-gray-300 mb-1">Password</label>
             <input
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               className="w-full px-4 py-2 pr-10 rounded-md bg-white/10 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#3b82f6]"
               placeholder="••••••••"
               required
@@ -96,12 +107,11 @@ function SignUp() {
         </form>
 
         <div className="text-center text-gray-400 text-sm">
-          Already have an account?{' '}
+          Already have an account?{" "}
           <Link to="/Arise/Login" className="text-purple-400 hover:underline">
             Login
           </Link>
         </div>
-
       </div>
     </div>
   );
