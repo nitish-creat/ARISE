@@ -42,7 +42,7 @@ function App() {
             }
           ></Route>
           <Route path="/Arise/learn" element={<Learn />}></Route>
-          <Route path="/Arise/login" element={<Login />}></Route>
+          <Route path="/Arise/login" element={<Dashboard />}></Route>
           <Route path="/Arise/combine" element={<Combine />}></Route>
           <Route path="/Arise/Dashboard" element={<Dashboard />}></Route>
         </Routes>

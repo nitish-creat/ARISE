@@ -18,7 +18,10 @@ function Dashboard() {
   };
 
   return (
-    <div className="bg-[#020521] min-h-screen overflow-hidden">
+    // overflow-x-hidden (not overflow-hidden) so ambient glows/shadows in
+    // child cards can bleed past their container's edges for spatial depth,
+    // while still preventing horizontal scroll on small screens.
+    <div className="bg-[#020521] min-h-screen overflow-x-hidden">
       {/* Navbar with logout */}
       <DashNavbar onLogout={handleLogout} />
 
